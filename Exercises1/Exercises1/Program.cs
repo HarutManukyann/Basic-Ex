@@ -18,7 +18,7 @@ namespace Exercises1
             //Console.Write($"Result = {result}");
             #endregion
 
-            #region Ex.2. | addition, substraction, multiplication, division
+            #region Ex.2 | addition, substraction, multiplication, division
 
             //Console.Write("Input 1 number = ");
             //int num1 = Convert.ToInt32(Console.ReadLine());
@@ -45,7 +45,7 @@ namespace Exercises1
 
             #endregion
 
-            #region Ex.3. | Calculator
+            #region Ex.3 | Calculator
             //Console.WriteLine("Calculator for (+,-,*,/):");
             //Console.Write("Input 1 number = ");
             //int num1 = Convert.ToInt32(Console.ReadLine());
@@ -81,7 +81,6 @@ namespace Exercises1
 
 
             #endregion
-
         }
     }
 }
