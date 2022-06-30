@@ -20,9 +20,9 @@ namespace Exercises1
 
             #region Ex.2. | addition, substraction, multiplication, division
 
-            //Console.WriteLine("Input 1 number = ");
+            //Console.Write("Input 1 number = ");
             //int num1 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Input 2 number = ");
+            //Console.Write("Input 2 number = ");
             //int num2 = Convert.ToInt32(Console.ReadLine());
 
             //int addition = num1 + num2;
@@ -31,6 +31,7 @@ namespace Exercises1
             //Console.Write($"(-) {substraction},");
             //int multiplication = num1 * num2;
             //Console.Write($"(*) {multiplication},");
+            //double division;
 
             //if (num2 == 0)
             //{
@@ -38,10 +39,49 @@ namespace Exercises1
             //}
             //else
             //{
-            //    Console.WriteLine($"(/) {num1/num2}:");
+            //    division = num1 / num2;
+            //    Console.WriteLine($"(/) {division}:");
             //}
 
             #endregion
+
+            #region Ex.3. | Calculator
+            //Console.WriteLine("Calculator for (+,-,*,/):");
+            //Console.Write("Input 1 number = ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Input any action you want from this -> (+,-,*,/): ");
+            //char act = Console.ReadLine()[0];
+            //Console.Write("Input 2 number = ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //double result = 0;
+            //if (act == 43)
+            //{
+            //    result = num1 + num2;
+            //    Console.WriteLine($"{num1} {act} {num2} = {result}");
+            //}
+            //else if (act == 45)
+            //{
+            //    result = num1 - num2;
+            //    Console.WriteLine($"{num1} {act} {num2} = {result}");
+            //}
+            //else if (act == 42)
+            //{
+            //    result = num1 * num2;
+            //    Console.WriteLine($"{num1} {act} {num2} = {result}");
+            //}
+            //else if (act == 47 && num2 != 0)
+            //{
+            //    result = num1 / num2;
+            //    Console.WriteLine($"{num1} {act} {num2} = {result}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You can't divide by 0:");
+            //}
+
+
+            #endregion
+
         }
     }
 }
