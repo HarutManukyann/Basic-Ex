@@ -81,6 +81,26 @@ namespace Exercises1
 
 
             #endregion
+
+            #region Ex.4 | Strings, DateTime
+            //Console.Write("First Name: ");
+            //string firstName = Console.ReadLine();
+            //Console.Write("Last Name: ");
+            //string lastName = Console.ReadLine();
+            //Console.WriteLine("Birthday:");
+
+            //Console.Write("Day - ");
+            //int day = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Month - ");
+            //int month = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Year - ");
+            //int year = Convert.ToInt32(Console.ReadLine());
+
+            //DateTime time = DateTime.Now;
+            //Console.WriteLine($"Time:  {time.Hour}:{time.Minute}:{time.Second}");
+            #endregion
+
+
         }
     }
 }
