@@ -82,7 +82,7 @@ namespace Exercises1
 
             #endregion
 
-            #region Ex.4 | Strings, DateTime
+             #region Ex.4 | Strings, DateTime
             //Console.Write("First Name: ");
             //string firstName = Console.ReadLine();
             //Console.Write("Last Name: ");
