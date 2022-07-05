@@ -65,11 +65,112 @@ namespace Homework
                 Console.WriteLine($"The smallest number is c = {c}");
             }
         }
+        static void EqualOne()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a == 1 || b == 1 || c == 1)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+        }
+        static void EqualTwo()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a == 2)
+            {
+                if (b == 2 || c == 2)
+                {
+                    Console.WriteLine(true);
+                }
+                else
+                {
+                    Console.WriteLine(false);
+                }
+            }
+            else if (b == 2)
+            {
+                if (c == 2)
+                {
+                    Console.WriteLine(true);
+                }
+                else
+                {
+                    Console.WriteLine(false);
+                }
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+        }
+        static void Triangle()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a + b > c)
+            {
+                if (a + c > b)
+                {
+                    if (b + c > a)
+                    {
+                        Console.WriteLine("y = 1");
+                    }
+                    else
+                    {
+                        Console.WriteLine("y = 2");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("y = 2");
+                }
+            }
+            else
+            {
+                Console.WriteLine("y = 2");
+            }
+
+        }
         static void Main(string[] args)
         {
             //Given 3 different numbers a,b,c 
-            TheBiggest(); // Find the biggest of 3 numbers
-            TheSmallest(); // Find the smallest of 3 numbers
+            //TheBiggest(); // Find the biggest of 3 numbers
+            //TheSmallest(); // Find the smallest of 3 numbers
+            //EqualOne(); // If one of the given numbers  is equal 1. Output TRUE or FALSE
+            //EqualTwo(); // If two of the given numbers is equal 2. Output TRUE or FALSE
+            //Triangle();  // Is it possible to get a triangle. If yes output 'y=1', else 'y=2'
+
+
+
+
         }
     }
 }
