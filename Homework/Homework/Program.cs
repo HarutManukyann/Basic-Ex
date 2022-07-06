@@ -327,6 +327,131 @@ namespace Homework
             }
 
         }
+        static void TheBiggestFour()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("d = ");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a > b && a > c && a > d)
+            {
+                Console.WriteLine($"The biggest number a = {a}");
+            }
+            else if (b > a && b > c && b > d)
+            {
+                Console.WriteLine($"The biggest number b = {b}");
+            }
+            else if (c > a && c > b && c > d)
+            {
+                Console.WriteLine($"The biggest number c = {c}");
+            }
+            else
+            {
+                Console.WriteLine($"The biggest number d = {d}");
+            }
+        }
+        static void TheSmallestFour()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("d = ");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a < b && a < c && a < d)
+            {
+                Console.WriteLine($"The Smallest number a = {a}");
+            }
+            else if (b < a && b < c && b < d)
+            {
+                Console.WriteLine($"The smallest number b = {b}");
+            }
+            else if (c < a && c < b && c < d)
+            {
+                Console.WriteLine($"The smallest number c = {c}");
+            }
+            else
+            {
+                Console.WriteLine($"The smallest number d = {d}");
+            }
+        }
+        static void TwoDigSum()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("d = ");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a + b == c + d)
+            {
+                Console.WriteLine(true);
+            }
+            else if (a + c == b + d)
+            {
+                Console.WriteLine(true);
+            }
+            else if (a + d == b + c)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+        }
+        static void ThreeDigSum()
+        {
+            Console.WriteLine("Input Numbers any you want:");
+            Console.Write("a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("d = ");
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+
+            if (a == b + c + d)
+            {
+                Console.WriteLine(true);
+            }
+            else if (b == a + c + d)
+            {
+                Console.WriteLine(true);
+            }
+            else if (c == a + b + d)
+            {
+                Console.WriteLine(true);
+            }
+            else if (d == a + b + c)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+        }
         static void Main(string[] args)
         {
             //Given 3 different numbers a,b,c 
@@ -340,6 +465,12 @@ namespace Homework
             //?GeometricProg(); // If these numbers form an geometric progression. Output TRUE otherwise FALSE
             //AcsendingOrder(); // Output sorted in acsending order <
             //DecreasingOrder(); // Output sorted in decreasing order >
+            //TheBiggestFour();  // Find the biggest of 4 numbers
+            //TheSmallestFour(); // FInd the smallest of 4 numbers
+            //TwoDigSum();  // two numbers sum = another two numbers sum. output TRUE otherwise FALSE
+            //ThreeDigSum();  // three numbers sum = one number. Output TRUE otherwise FALSE
+
+
 
         }
     }
