@@ -54,32 +54,32 @@ namespace Strings
             #endregion
 
             #region Ex. 152
-            Console.Write("How many numbers do you want to input: ");
-            int numCount = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("How many numbers do you want to input: ");
+            //int numCount = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Input dividing number. it can not be zero: ");
-            int n;
-            do
-            {
-                Console.Write("Divide number = ");
-                n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Input dividing number. it can not be zero: ");
+            //int n;
+            //do
+            //{
+            //    Console.Write("Divide number = ");
+            //    n = Convert.ToInt32(Console.ReadLine());
 
-            } while (n <= 0);
-            Console.WriteLine("Input only numbers:");
-            string[] str = new string[numCount];
-            int indexNum = 0;
-            int result = 1;
-            for (int i = 0; i < str.Length; i++)
-            {
-                str[i] = Console.ReadLine();
-                indexNum = Convert.ToInt32(str[i]);
-                if (indexNum % n == 0)
-                {
-                    result *= indexNum;
-                }
-            }
-            Console.WriteLine("_____________________________");
-            Console.WriteLine($"{result}");
+            //} while (n <= 0);
+            //Console.WriteLine("Input only numbers:");
+            //string[] str = new string[numCount];
+            //int indexNum = 0;
+            //int result = 1;
+            //for (int i = 0; i < str.Length; i++)
+            //{
+            //    str[i] = Console.ReadLine();
+            //    indexNum = Convert.ToInt32(str[i]);
+            //    if (indexNum % n == 0)
+            //    {
+            //        result *= indexNum;
+            //    }
+            //}
+            //Console.WriteLine("_____________________________");
+            //Console.WriteLine($"{result}");
             #endregion
 
 
