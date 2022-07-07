@@ -82,6 +82,66 @@ namespace Strings
             //Console.WriteLine($"{result}");
             #endregion
 
+            #region Write a program in C# Sharp to extract a substring from a given string without using the library function.
+            //Console.Write("Input string: ");
+            //string str = Console.ReadLine();
+            //Console.Write("Input position to start extraction(number): ");
+            //int pos = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Input the length of substring(number): ");
+            //int subStr = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = pos; i < pos+subStr; i++)
+            //{
+            //    Console.Write(str[i]);
+            //}
+            #endregion
+
+            #region Write a C# Sharp program to check whether a given substring is present in the given string.
+            //Console.Write("Input string: ");
+            //string str = Console.ReadLine();
+            //Console.Write("Input the substring to search: ");
+            //string subStr = Console.ReadLine();
+
+            //if (str.Contains(subStr))
+            //{
+            //    Console.WriteLine("The substring is exist:");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The substring is NOT exist:");
+            //}
+            #endregion
+
+
+            #region Write a program in C# Sharp to read a sentence and replace lowercase characters by uppercase and vice-versa
+            //Console.Write("Input string:");
+            //string str = Console.ReadLine();
+
+            //for (int i = 0; i < str.Length; i++)
+            //{
+            //    char ch = str[i];
+
+            //    if (char.IsLower(ch))
+            //    {
+            //        Console.Write(char.ToUpper(ch));
+            //    }
+            //    else
+            //    {
+            //        Console.Write(char.ToLower(ch));
+            //    }
+            //}
+
+            #endregion
+
+            #region Write a program in C# Sharp to check the username and password
+            
+
+
+            #endregion
+
+
+
+
 
 
 
