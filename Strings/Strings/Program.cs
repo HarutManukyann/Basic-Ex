@@ -4,8 +4,130 @@ namespace Strings
 {
     class Program
     {
+        public struct Time
+        {
+            public int Days, Months, Year;
+            public Time(int day, int moths, int year)
+            {
+                Days = day;
+                Months = moths;
+                Year = year;
+            }
+        }
+        public class Timer
+        {
+            private int Count;
+            public Timer(int count)
+            {
+                Count = count;
+            }
+        }
+        static int Calc(char ch, int elem1, int elem2)
+        {
+            int result = 0;
+
+            switch (ch)
+            {
+                case '+':
+                    result = elem1 + elem2;
+
+                    break;
+                case '-':
+                    result = elem1 - elem2;
+                    break;
+                case '/':
+                    result = elem1 / elem2;
+                    break;
+                case '*':
+                    result = elem1 * elem2;
+                    break;
+                default:
+                    break;
+            }
+            return result;
+
+        }
+        public static int Factorial(int i)
+        {
+            int mult;
+            if (i == 0)
+                return 1;
+
+            mult = i * Factorial(i - 1);
+            return mult;
+        }
+
+        public static int Sumari(int num)
+        {
+            int result = 0;
+            for (int i = 0; i <= num; i++)
+            {
+                result += i;
+            }
+            return result;
+
+        }
+        public static int Sum(int num)
+        {
+            int result=0;
+            if (num == 0)
+            {
+                return result;
+            }
+            else
+            {
+                result = num + Sum(num - 1);
+                return result;
+            }
+        }
         static void Main(string[] args)
         {
+            Console.WriteLine(Sum(100));
+            Console.WriteLine(Sumari(100));
+            //Console.WriteLine(Factorial(6));
+            //Time time;
+            //time.Days = 3;
+            //int elem1=0;
+            //int elem2=0;
+            //char ch='+';
+
+            //string str = "40-15=";
+            //int temp = 0;
+            //for (int i = 0; i < str.Length; i++)
+            //{
+            //    if (str[i] >= 48 && str[i] <= 57 && str[i + 1] >= 48 && str[i + 1] <= 57)
+            //    {
+
+            //        temp = Convert.ToInt32(str.Substring(i, 2));
+            //        if (i < 2)
+            //        {
+            //            elem1 = temp;
+
+            //            Console.WriteLine(elem1);
+            //        }
+            //        else
+            //        {
+            //            elem2 = temp;
+            //            Console.WriteLine(elem2);
+            //        }
+            //        temp = 0;
+
+            //    }
+            //    else if (str[i] == 42 || str[i] == 43 || str[i] == 45 || str[i] == 47)
+            //    {
+            //        ch = str[i];
+            //        Console.WriteLine(ch);
+            //    }
+            //}
+            //Console.WriteLine("_____________________________");
+            //Console.WriteLine( "Answer" );
+            //Console.WriteLine("_____________________________");
+            //Console.WriteLine(   Calc(ch, elem1, elem2));
+            ////Console.WriteLine(ch);
+
+
+
+
             #region String max symbol
             //Console.Write("Input string: ");
             //string str = Console.ReadLine();
@@ -134,7 +256,8 @@ namespace Strings
             #endregion
 
             #region Write a program in C# Sharp to check the username and password
-            
+
+
 
 
             #endregion
