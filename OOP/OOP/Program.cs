@@ -9,7 +9,9 @@ namespace OOP
 
             Print print = new Print();
             print.PrintConsol();
-            
+
+
+
         }
     }
 }

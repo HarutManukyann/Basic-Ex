@@ -8,7 +8,7 @@ namespace OOP
 {
     class Print
     {
-
+         
         public void PrintConsol()
         {
             Console.WriteLine("Choose includings:");
@@ -18,6 +18,22 @@ namespace OOP
             Console.WriteLine("4: Only Meat");
             Console.WriteLine("IF YOU Want All press 5:");
             int choose = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("________________________________");
+            Console.WriteLine("Do you want DOUBLE CHEESE?");
+            Console.WriteLine("1: YES!!");
+            Console.WriteLine("2: NOO!!");
+            int dch = Convert.ToInt32(Console.ReadLine()); // doubl cheese checking
+            bool doubleCheese;
+            if (dch == 1)
+            {
+               
+                doubleCheese = true;
+            }
+            else
+            {
+                doubleCheese = false;
+            }
+            Console.WriteLine("________________________________");
             Console.WriteLine("Write Burger size:");
             Console.WriteLine("SMALL | MEDIUM | BIG");
             string size = Console.ReadLine();
@@ -34,34 +50,46 @@ namespace OOP
             {
                 kolori = 320;
             }
+            Console.WriteLine("________________________________");
+            Console.WriteLine("ADD your comment");
+            string comment = Console.ReadLine();
+            Console.WriteLine("________________________________");
 
+            string includingFoods = null;
             switch (choose)
             {
                 case 1:
-                    Burger burger = new Burger(size, false, "Meat, Cheese", kolori);
+
+                    includingFoods = "Meat,Cheese" ;
+                    Burger burger = new Burger(size, false, includingFoods, kolori,doubleCheese,comment);
                     burger.Composition();
                     break;
                 case 2:
-                    Burger burger1 = new Burger(size, false, "Meat, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ", kolori);
+                    includingFoods = "Meat, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ";
+                    Burger burger1 = new Burger(size, false, includingFoods, kolori,doubleCheese,comment);
                     burger1.Composition();
                     break;
                 case 3:
-                    Burger burger2 = new Burger(size, true, "Cheese, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ", kolori);
+                    includingFoods = "Cheese, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ";
+                    Burger burger2 = new Burger(size, true,includingFoods , kolori,doubleCheese,comment);
                     burger2.Composition();
                     break;
                 case 4:
-                    Burger burgerMeat = new Burger(size, true, "Meat", kolori);
+                    includingFoods = "Meat";
+                    Burger burgerMeat = new Burger(size, true, includingFoods, kolori,  doubleCheese,comment);
                     burgerMeat.Composition();
                     break;
                 case 5:
-                    Burger burgerAll = new Burger(size, false, "Meat,cheese, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ", kolori);
+                    includingFoods = "Meat,cheese, tomatoes, mushrooms, cucumbers, leaf lettuce, spinach ";
+                    Burger burgerAll = new Burger(size, false,includingFoods , kolori,doubleCheese,comment);
                     burgerAll.Composition();
                     break;
                 default:
+
                     break;
             }
-               
-               
+
+
         }
     }
 }
